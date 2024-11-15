@@ -18,7 +18,7 @@ A sleek, modern tip calculator that helps you quickly calculate the total bill a
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/KoustavDeveloper/tip-calculator.git
+git clone https://github.com/koustavx08/tip-calculator.git
 ```
 
 2. Navigate to the project directory:
@@ -103,10 +103,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-[Koustav Singh](https://github.com/KoustavDeveloper/)
+[Koustav Singh](https://github.com/koustavx08)
 
-[Project Link](https://github.com/KoustavDeveloper/tip-calculator)
+[Project Link](https://github.com/koustavx08/tip-calculator)
 
 ---
 
-Made with ❤️ by [Koustav Singh](https://github.com/KoustavDeveloper/)
+Made with ❤️ by [Koustav Singh](https://github.com/koustavx08)
