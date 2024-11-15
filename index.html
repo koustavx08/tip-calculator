@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .error {
+            display: none;
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -25,5 +31,37 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        const billInput = document.getElementById('bill');
+        const tipInput = document.getElementById('tip');
+        const calculateButton = document.getElementById('calculate');
+        const totalSpan = document.getElementById('total');
+        const billError = document.getElementById('billError');
+        const tipError = document.getElementById('tipError');
+
+        calculateButton.addEventListener('click', calculateTip);
+
+        function calculateTip() {
+            const bill = parseFloat(billInput.value);
+            const tip = parseFloat(tipInput.value);
+
+            if (isNaN(bill) || bill < 0) {
+                billError.style.display = 'block';
+                return;
+            } else {
+                billError.style.display = 'none';
+            }
+
+            if (isNaN(tip) || tip < 0 || tip > 100) {
+                tipError.style.display = 'block';
+                return;
+            } else {
+                tipError.style.display = 'none';
+            }
+
+            const total = bill + (bill * (tip / 100));
+            totalSpan.textContent = total.toFixed(2);
+        }
+    </script>
 </body>
 </html>
